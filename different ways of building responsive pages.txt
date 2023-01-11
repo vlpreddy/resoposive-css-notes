@@ -1,0 +1,34 @@
+1. META TAG
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+content="width=device-width
+      ----- this means width of content should be allways same to the width of the device
+initial-scale=1.0
+       --- what type zoom level when you load the page first time, if you change value to 2.0, you will see the chage in zoom
+       
+2. MEDIA QUERY
+    --- orientation:portrait
+           We can use orientation to write different css
+    --- min-aspect-ratio:16/9
+           We can use aspect ratio to write different css
+    --- (width > 300px)
+        (100px<=width<=width<=300px)
+             it is easy compare to normal range of media query but currently browser compatibility              is around 70% (but we can us POST CSS to do simiar range)
+ 
+3.  CONTAINER QUERY
+    @container() - seems browser support also going to be more promising
+      
+
+4. CUSTOM MEDIA QUERY
+        @custome-media --small (width>=400px)
+        @media(--small) 
+        Browser support is worst (this we can do in POST CSS)
+
+5. different html pages for different devices only when you have a complex and completly different body structure, not recommended to do 
+
+6. CSS GRID
+       Perfect for responsive design
+
+    
+ 
