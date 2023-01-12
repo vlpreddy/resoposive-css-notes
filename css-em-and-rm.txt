@@ -1,0 +1,62 @@
+<div class="level-1">
+    <h1>This is main heading in first lvel</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dicta quisquam quo                  voluptatibus modi ratione, reiciendis dolorum laboriosam labore   </p>
+    
+      <div class="level-2">
+           <h2>this is secondary heading in second level</h2>
+           <p>vitae dolores asperiores eum tenetur ab fugit mollitia sequi sed? Molestiae                      doloribus, asperiores, labore deserunt aspernatur porro voluptate natus repellat                 dolore            quod nobis   quos culpa. Dolorum dolore nemo id sapiente quaerat               </p>
+           
+            <div class="level-3">
+                     <h3>This is teritiary heading in third level </h3>
+                     <p> molestias officia sit deserunt vero cumque quos ipsam qui vitae,                              inventore facere voluptatum nobis dignissimos praesentium, commodi quasi                          tempore. Nisi quos tempore dolor, itaque suscipit totam cum quisquam                              aspernatur beatae unde! Voluptas blanditiis ipsa itaque possimus. Rerum                          quisquam voluptate quos mollitia nihil. Optio ab quibusdam commodi enim,                          placeat repudiandae quis!</p>
+            </div>
+     </div>
+</div>
+
+----EM-----
+.level-1{
+font-size:2em. // 1em=16px *2 = 32px
+}
+
+.level-2{
+font-size:2em. // now here the font size will be 32*2 = 64px
+margin-bottom:1em; // for margin and padding it will take this element font-size as a base. so now margin-bottom is 2em
+}
+
+.level-3{
+font-size:2em // now here the font size will be 64*2 = 128px
+}
+
+So basically childrens size is base from the parent size its like a compounding size when you go t deeper level, so we need to be very carefull when you dealling with 'em'
+
+
+----EM-----
+
+
+
+----REM-----
+
+::root {
+}
+
+html{
+font-size: 16px;
+}
+
+//  unlike em, rem is consider root or html element when adding up the size
+
+.level-1{
+font-size:2rem. 
+}
+
+.level-2{
+font-size:2rem. //  so here 
+margin-bottom:1rem; // for margin and padding it will root take base as font-size. so now margin-bottom is 16px(1rem), so rem is consistant by always considering its root font-size
+}
+
+.level-3{
+font-size:2rem // 
+
+}
+
+----REM-----
