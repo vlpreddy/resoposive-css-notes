@@ -1,0 +1,28 @@
+
+
+
+height:20vmax
+    ---- its gone take the large one of the two units(viewport width, viewport heheight). So when you drag the browser window to horizontally big, it will take the 20% of width viewport, but if you drag the browsser window to vertically longer it will take 20% of the height viewport.
+
+
+
+
+height:20vmin
+    ---- its gone take the smaller one of the two units(viewport width, viewport heheight). So when you drag the browser window to horizontally big, it will take the 20% of height viewport, but if you drag the browsser window to vertically longer it will take 20% of the width viewport since it is smaller.
+
+Note : watchout for any paddings or margin give to the elements
+
+these units can be used for paddings, fonts, width, height e.t,c, 
+for example we can use 
+vw for big headings for better responsive, but it may be difficult for paragraphs
+vmin can also be used for headings. 
+all these are basic statements, we need to and apply all differnt scenarios and use them appropriately.
+self-note-- 
+
+
+Please add what ever you encounter when you working with realtime applications
+---self-note  
+
+
+https://www.youtube.com/watch?v=IWFqGsXxJ1E
+https://codepen.io/kevinpowell/pen/QdRyKe
