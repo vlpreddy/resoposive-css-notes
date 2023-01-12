@@ -60,3 +60,8 @@ font-size:2rem //
 }
 
 ----REM-----
+
+if we setup to rem or em if we change sizing in the top level element it will reflect to all lowlevel elements, we can do other minor changes manually if we need when dealing with mobile.
+
+Example
+https://codepen.io/kevinpowell/pen/RKdjXe
