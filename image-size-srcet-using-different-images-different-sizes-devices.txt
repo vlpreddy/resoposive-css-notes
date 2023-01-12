@@ -1,6 +1,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" >
       --- This line make sure content adjust depends on the screen size, what ever the srcet or any other setting will work if you setup this line which is almost mandate for any of your web or mobile applications.
-  
+ 
+ 
+USING SRCET
+
 <img
  src="responsive-images/y800.png"
  sizes="(max-width: 480px) 100vw, (max-width:240px) 49vw"
@@ -15,3 +18,41 @@
  srcset="y400.png 400w, y800.png 800w, y1600w.png 1600w, y2400.png 2400w"
            - Identify which image to appear at which different browsing view port(size of the                  device like 400w, 800w e.t.c(resolution of the device) mentioned above). 
 
+************************************************************
+************************************************************
+
+USING PICTURE ELEMENT
+
+<picture>
+      <source media="(min-width: 960px)"
+              srcset="images/all-business-large.jpg 534w,
+                      images/all-business-large@2x.jpg 1068w,
+                      images/all-business-large@3x.webp 1602w,
+                      images/all-business-large@3x.jpg 1602w"
+              sizes="50vw">
+      <source media="(min-width: 600px)"
+              srcset="images/all-business-medium.jpg 474w,
+                      images/all-business-medium@2x.jpg 984w,
+                      images/all-business-medium@3x.jpg 1422w">
+      <source srcset="images/all-business-small.jpg 273w,
+                      images/all-business-small@2x.jpg 546w,
+                      images/all-business-small@3x.jpg 819w">
+      <img class="example" src="images/all-business-small.jpg" alt="This cat is all business"</picture>
+  
+    ----media="(min-width:960px)"
+            This tells the browser what ever the srcset image will be used starting from 960px
+    ----srcset="images/all-business-large.jpg 534w"
+            Identify which image to appear at which different browsing view port(size of the                  device like 400w, 800w e.t.c(resolution of the device) mentioned above). 
+    ----- img element also added inside picture element because all the srcset images will                 replace the src tag of image tag to display the image, so when ever you want to give              width or heght using css when picture element you should do it for image element only            not picture element to avoid applying 2 changes to it since you might give                        accidentally for both elements.
+           NO IMAG ELEMENT INDSIDE PICTURE ELEMENT MEANS NO IMAGE APPEAR IN THE UI
+           
+           
+ DIFFERENCE BETWEEN USING IMG VS PICTURE&IMG
+            ---- WITH PICTURE element we can also load different image when viewing different sizes along with loading different images for different resolutions
+            
+           
+           
+           
+************************************************************
+************************************************************
+   
